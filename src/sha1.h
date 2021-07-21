@@ -81,6 +81,8 @@ namespace Hash
 			constexpr Buffer() = default;
 			constexpr Buffer(const Buffer &) = default;
 
+			Buffer& operator=(const Buffer &) = default;
+
 			CONSTEXPR_CPP17_CHOCOBO1_HASH Buffer(const std::initializer_list<T> initList)
 			{
 #if !defined(NDEBUG)
